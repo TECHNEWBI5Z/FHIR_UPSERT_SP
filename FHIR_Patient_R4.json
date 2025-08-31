@@ -1,0 +1,101 @@
+{
+  "resourceType": "Patient",
+  "id": "12345",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">John Doe, male, born 1974-12-25</div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "system": "http://hospital.smarthealth.org/mrn",
+      "value": "MRN-00112233"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Doe",
+      "given": ["John", "A."]
+    },
+    {
+      "use": "nickname",
+      "given": ["Johnny"]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1-555-123-4567",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "john.doe@example.com",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-12-25",
+  "address": [
+    {
+      "use": "home",
+      "type": "both",
+      "line": ["123 Main St", "Apt 4B"],
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "62704",
+      "country": "USA"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "code": "M",
+        "display": "Married"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "code": "N",
+              "display": "Next-of-kin"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "family": "Doe",
+        "given": ["Jane"]
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+1-555-987-6543",
+          "use": "home"
+        }
+      ],
+      "gender": "female"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/1",
+    "display": "General Hospital"
+  }
+}
